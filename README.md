@@ -25,20 +25,23 @@ Add this repo to Morphe Manager: https://github.com/LostPRC/qq-lite-patches
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/LostPRC/qq-lite-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+<details open>
+<summary>📦 QQ&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
 
-### Slim QQ (`resourcePatch`, on by default)
+**Package name:** `com.tencent.mobileqq`
 
-Each category can be turned off with a patch option:
+**🎯 Supported versions:**
 
-| Option | Removes |
-|---|---|
-| `removeGameCenter` | Game center, YunGame cloud games, mini games (`assets/mini`, `assets/minigame`, WXA package), game widgets, WADL download services, game rooms |
-| `removeZPlan` | Super QQ Show / ZPlan / Zootopia / CMShow (Apollo): UE4 + Filament assets, Wwise `libAk*.so` audio plugins, `libzplan*`, `libQQShow2D*`, GCloudVoice, UE4 manifest meta-data, `ApolloProvider` |
-| `removeTelemetry` | Bugly, Matrix, RMonitor, Beacon, QIMEI, WeChat crash/backtrace and `librtc_node_report` native libraries |
-| `removeMisc` | `UserLeadingActivity` (VIP ad guide), `KingkongPatch.apk`, `MidasPay.zip`, `live_shopping_manager.apk`, spring-festival red-packet assets, `libMMANDKSignature.so`, `com.android.vending.splits` meta-data |
+| 9.3.75 |
+| :---: |
 
-The full list of removed entries and components is in
-[`Removals.kt`](patches/src/main/kotlin/app/lostprc/patches/qq/lite/Removals.kt).
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Slim QQ](#slim-qq) | Reproduces the QQ Lite build: removes game center / mini games, Super QQ Show (ZPlan, UE4, Filament), crash/monitoring native libraries and other bundled extras, together with their AndroidManifest components. | • Remove game center<br>• Remove Super QQ Show<br>• Remove telemetry libraries<br>• Remove miscellaneous extras |
+
+</details>
 
 <!-- PATCHES_END -->
 
